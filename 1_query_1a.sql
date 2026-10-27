@@ -1,10 +1,11 @@
--- Visar antalet ansökningar per Utbildningsområde
+-- antalet ansökningar per utbildningsområde
 
 SELECT
-    Utbildningsområde, SUM(SÖKTA_UTBILDNINGSOMGÅNGAR) ansökningar
-    FROM resultat
-    GROUP BY Utbildningsområde
-    ORDER BY ansökningar DESC
+    Utbildningsområde "Utbildningsområde",
+    COUNT(Beslut) "Ansökningar" 
+FROM resultat
+GROUP BY Utbildningsområde
+ORDER BY "Ansökningar" DESC
 ;
 
 EXIT
