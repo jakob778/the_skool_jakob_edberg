@@ -1,14 +1,14 @@
--- topp 5 län efter beviljade ansökningar
+-- Topp 5 län efter beviljade ansökningar
 
 SELECT
-    Län,
-    COUNT(*) beviljade
+    län "Län",
+    COUNT(*) "Beviljade"
 FROM resultat
 WHERE 
-    Beslut = 'Beviljad'
-    AND Län NOT IN ('Flera kommuner')
-GROUP BY Län
-ORDER BY beviljade DESC
+    beslut = 'Beviljad'
+    AND län NOT IN ('Flera kommuner')
+GROUP BY "Län"
+ORDER BY "Beviljade" DESC
 FETCH FIRST 5 ROWS ONLY
 ;
 

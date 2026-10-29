@@ -1,6 +1,4 @@
--- antal utbildningar som innehåller ordet AI
-
-SET PAGESIZE 100
+-- Antal utbildningar som innehåller ordet AI
 
 SELECT 
     SUM(
@@ -11,6 +9,3 @@ FROM resultat
 ;
 
 EXIT
- 
- 
-
