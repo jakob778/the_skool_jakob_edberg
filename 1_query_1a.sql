@@ -1,10 +1,10 @@
--- antalet ansökningar per utbildningsområde
+-- Antalet ansökningar per utbildningsområde
 
 SELECT
-    Utbildningsområde "Utbildningsområde",
-    COUNT(Beslut) "Ansökningar" 
+    utbildningsområde "Utbildningsområde",
+    COUNT(beslut) "Ansökningar" 
 FROM resultat
-GROUP BY Utbildningsområde
+GROUP BY utbildningsområde
 ORDER BY "Ansökningar" DESC
 ;
 

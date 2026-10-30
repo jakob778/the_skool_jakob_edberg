@@ -1,11 +1,11 @@
--- visar antalet beviljade ansökningar per utbildningsområde
+-- Antalet beviljade ansökningar per utbildningsområde
 
 SELECT
-    Utbildningsområde "Utbildningsområde",
+    utbildningsområde "Utbildningsområde",
     COUNT(*) "Beviljade" 
 FROM resultat
-WHERE Beslut = 'Beviljad'
-GROUP BY Utbildningsområde
+WHERE beslut = 'Beviljad'
+GROUP BY utbildningsområde
 ORDER BY "Beviljade" DESC
 ;
 
