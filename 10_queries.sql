@@ -3,15 +3,15 @@ SET PAGESIZE 100
 
 DESC resultat;
 
--- Antalet ansökningar per utbildningsområde                                                
+-- Antalet ansökningar per utbildningsområde                            
 
-SELECT                                                                              
-    utbildningsområde "Utbildningsområde",                                          
-    COUNT(beslut) "Ansökningar"                                                          
-FROM resultat                                                                              
+SELECT
+    utbildningsområde "Utbildningsområde",
+    COUNT(beslut) "Ansökningar"                                     
+FROM resultat
 GROUP BY utbildningsområde
 ORDER BY "Ansökningar" DESC                                                             
-;                                                                                           
+;                                                                                          
 
  -- Antalet beviljade ansökningar per utbildningsområde
   

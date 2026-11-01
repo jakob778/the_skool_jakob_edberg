@@ -3,7 +3,7 @@ SET PAGESIZE 100
 
 DESC resultat;
 
--- 1. Fokusera på ett smalt yrkesområde?
+-- Fokusera på ett smalt yrkesområde?
 
 SELECT
     utbildningsnamn "Smala yrkesområden",
@@ -19,7 +19,7 @@ WHERE smalt_yrkesområde = 'Ja'
 GROUP BY "Smala yrkesområden"
 ;
 
--- 2. Vilka skolor har hög beviljandegrad? 
+-- Vilka skolor har hög beviljandegrad? 
 
 SELECT 
     utbildningsanordnare_administr "Anordnare",
@@ -38,9 +38,7 @@ HAVING COUNT(*) >= 10
 ORDER BY "Beviljandegrad" DESC
 ;
 
-
-
--- 3. Hur många omgångar är optimalt att söka? 
+-- Hur många omgångar är optimalt att söka? 
 
 SELECT
     AVG(sökta_utbildningsomgångar) "Medel sökta omg."
