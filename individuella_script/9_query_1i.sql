@@ -3,7 +3,7 @@
 SELECT 
     SUM(
 CASE
-    WHEN INSTR((Utbildningsnamn), 'AI')
+    WHEN INSTR((utbildningsnamn), 'AI')
     THEN 1 ELSE 0 END) "Innehåller 'AI'"   
 FROM resultat
 ;
